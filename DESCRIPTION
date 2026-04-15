@@ -1,13 +1,23 @@
 Package: ADS8192
-Title: What the Package Does (One Line, Title Case)
+Title: ADS 8192 PCA Analysis Tools
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R:
+    person("Makonnen", "Nobel", email = "Nobel.Makonnen@stjude.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6523-7197"))
+Description: Provides functions to perform principal component analysis (PCA)
+    on SummarizedExperiment objects. Includes tools for selecting top variable
+    features, running PCA, and creating publication-ready visualizations.
+    Designed as a teaching example for scientific application development.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/SmartOval/ADS8192
-BugReports: https://github.com/SmartOval/ADS8192/issues
+Imports: 
+    ggplot2,
+    SummarizedExperiment
+Suggests: 
+    knitr,
+    testthat
+Depends: 
+    R (>= 3.5)
+LazyData: true
